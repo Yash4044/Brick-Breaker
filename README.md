@@ -10,8 +10,6 @@
         }
     </style>
 </head>
-<body>
-    <canvas id="myCanvas" width="480" height="320"></canvas>
     <script>
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
@@ -86,7 +84,7 @@
         function drawBall() {
             ctx.beginPath();
             ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-            ctx.fillStyle = "#0095DD";
+            ctx.fillStyle = "#D13400";
             ctx.fill();
             ctx.closePath();
         }
@@ -94,7 +92,7 @@
         function drawPaddle() {
             ctx.beginPath();
             ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-            ctx.fillStyle = "#0095DD";
+            ctx.fillStyle = "#D13400";
             ctx.fill();
             ctx.closePath();
         }
@@ -150,5 +148,7 @@
 
         draw();
     </script>
+<body>
+    <canvas id="myCanvas" width="480" height="320"></canvas>
 </body>
 </html>
