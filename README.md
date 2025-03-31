@@ -10,10 +10,7 @@
         }
     </style>
 </head>
-
-<body>
-    <canvas id="myCanvas" width="480" height="320"></canvas>
-    <script>
+       <script>
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
 
@@ -151,5 +148,7 @@
 
         draw();
     </script>
+<body>
+    <canvas id="myCanvas" width="480" height="320"></canvas>
 </body>
 </html>
